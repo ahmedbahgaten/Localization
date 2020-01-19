@@ -21,21 +21,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var termsLabel:UILabel!
     @IBOutlet weak var segmentedControl:UISegmentedControl!
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        if "en" == LocalizationSystem.sharedInstance.getLanguage() {
-//            segmentedControl.selectedSegmentIndex = 0
-//        }
-//        else {
-//            segmentedControl.selectedSegmentIndex = 1
-//
-//        }
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.topItem?.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: "navBarTitle", comment: "")
         notificationView.roundedCorner()
         languageView.roundedCorner()
         reportView.roundedCorner()
@@ -46,29 +33,30 @@ class ViewController: UIViewController {
         reportView.grayColor()
         termsView.grayColor()
         aboutView.grayColor()
-        
-        
         receiveNotificationLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "receive_Notification", comment: "")
         languageLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "language", comment: "")
         reportProblemLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "report_Problem", comment: "")
         aboutLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "about", comment: "")
         termsLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "Terms_Policies", comment: "")
     }
+    override func viewWillAppear(_ animated: Bool) {
+        if "en" == LocalizationSystem.sharedInstance.getLanguage() {
+            segmentedControl.selectedSegmentIndex = 0
+        }
+        else {
+            segmentedControl.selectedSegmentIndex = 1
+        }
+        navigationController?.navigationBar.prefersLargeTitles = true
+                 navigationController?.navigationBar.topItem?.title = LocalizationSystem.sharedInstance.localizedStringForKey(key: "navBarTitle", comment: "")
+    }
     func setupArabicLanguage() {
-        //set app language
         LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
-        //reset UIViews
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
-        
-        //Restart
         restartApplication()
     }
     func setupEnglishLanguage() {
-        // set app language
         LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
-        //reset uiviews
         UIView.appearance().semanticContentAttribute = .forceLeftToRight
-        //Restart
         restartApplication()
     }
     func restartApplication() {
@@ -87,9 +75,9 @@ class ViewController: UIViewController {
                 setupEnglishLanguage()
             }
         case 1:
-            if "ar" == LocalizationSystem.sharedInstance.getLanguage() {
+            if "ar" ==
+                LocalizationSystem.sharedInstance.getLanguage() {
                 setupEnglishLanguage()
-                
             } else {
                 setupArabicLanguage()
             }
@@ -97,7 +85,6 @@ class ViewController: UIViewController {
             print("Default")
         }
     }
-    
 }
 extension UIView {
     func roundedCorner() {

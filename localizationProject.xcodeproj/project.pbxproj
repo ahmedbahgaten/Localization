@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BA680E977A876631F9582465 /* Pods_localizationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700E15A032D874EDB08F4F68 /* Pods_localizationProject.framework */; };
-		E20C94A523D3C32300D2EDE6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C94A423D3C32300D2EDE6 /* R.generated.swift */; };
 		E20C94A823D3C80C00D2EDE6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E20C94AA23D3C80C00D2EDE6 /* Localizable.strings */; };
 		E20C94AD23D4953A00D2EDE6 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C94AC23D4953A00D2EDE6 /* LocalizationSystem.swift */; };
 		E20C94B723D4C6C600D2EDE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20C94B623D4C6C500D2EDE6 /* Main.storyboard */; };
@@ -24,7 +23,6 @@
 		A399072EFF396949FF9206D2 /* Pods-localizationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localizationProject.release.xcconfig"; path = "Target Support Files/Pods-localizationProject/Pods-localizationProject.release.xcconfig"; sourceTree = "<group>"; };
 		D4A5D740C92EADE027349D89 /* Pods-localizationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localizationProject.debug.xcconfig"; path = "Target Support Files/Pods-localizationProject/Pods-localizationProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E20C949F23D33E3B00D2EDE6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		E20C94A423D3C32300D2EDE6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		E20C94A923D3C80C00D2EDE6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E20C94AB23D3C81200D2EDE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E20C94AC23D4953A00D2EDE6 /* LocalizationSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 			children = (
 				E296C2A123D1DCCB00BD3DFF /* AppDelegate.swift */,
 				E296C2A323D1DCCB00BD3DFF /* SceneDelegate.swift */,
-				E20C94A423D3C32300D2EDE6 /* R.generated.swift */,
 				E296C2A523D1DCCB00BD3DFF /* ViewController.swift */,
 				E20C94B623D4C6C500D2EDE6 /* Main.storyboard */,
 				E296C2AA23D1DCCD00BD3DFF /* Assets.xcassets */,
@@ -244,7 +241,6 @@
 				E20C94AD23D4953A00D2EDE6 /* LocalizationSystem.swift in Sources */,
 				E296C2A223D1DCCB00BD3DFF /* AppDelegate.swift in Sources */,
 				E296C2A423D1DCCB00BD3DFF /* SceneDelegate.swift in Sources */,
-				E20C94A523D3C32300D2EDE6 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
