@@ -60,9 +60,11 @@ class ViewController: UIViewController {
         restartApplication()
     }
     func restartApplication() {
+        
         let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "viewController") as! ViewController
+          let nav = UINavigationController.init(rootViewController: viewController)
         let window = UIApplication.shared.windows.first { $0.isKeyWindow }
-        window?.rootViewController = viewController
+        window?.rootViewController = nav
         
     }
     
