@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  localizationProject
+
+  Created by AHMED on 1/18/20.
+  Copyright © 2020 AHMED. All rights reserved.
+*/
+"receive_Notification" = "Receive Notification";
+"language" = "Language";
+"report_Problem" = "Report A Problem";
+"Terms_Policies" = "Terms&Policies";
+"about" = "About";
+"navBarTitle" = "More";
