@@ -22,7 +22,6 @@
 		700E15A032D874EDB08F4F68 /* Pods_localizationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_localizationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A399072EFF396949FF9206D2 /* Pods-localizationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localizationProject.release.xcconfig"; path = "Target Support Files/Pods-localizationProject/Pods-localizationProject.release.xcconfig"; sourceTree = "<group>"; };
 		D4A5D740C92EADE027349D89 /* Pods-localizationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localizationProject.debug.xcconfig"; path = "Target Support Files/Pods-localizationProject/Pods-localizationProject.debug.xcconfig"; sourceTree = "<group>"; };
-		E20C949F23D33E3B00D2EDE6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E20C94A923D3C80C00D2EDE6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E20C94AB23D3C81200D2EDE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E20C94AC23D4953A00D2EDE6 /* LocalizationSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
@@ -260,7 +259,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E296C2AD23D1DCCD00BD3DFF /* Base */,
-				E20C949F23D33E3B00D2EDE6 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
