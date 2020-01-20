@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         termsLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "Terms_Policies", comment: "")
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        super.viewWillAppear(true)
         if "en" == LocalizationSystem.sharedInstance.getLanguage() {
             segmentedControl.selectedSegmentIndex = 0
         }
