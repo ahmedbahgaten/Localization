@@ -60,12 +60,7 @@ class ViewController: UIViewController {
     func setupEnglishLanguage() {
         LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
         UIView.appearance().semanticContentAttribute = .forceLeftToRight
-        if notificationSwitch.isOn {
-            notificationSwitch.isOn = true
-        }
-        else {
-            notificationSwitch.isOn = false
-        }
+      
         restartApplication()
     }
     func restartApplication() {
