@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA680E977A876631F9582465 /* Pods_localizationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700E15A032D874EDB08F4F68 /* Pods_localizationProject.framework */; };
 		E20C94A823D3C80C00D2EDE6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E20C94AA23D3C80C00D2EDE6 /* Localizable.strings */; };
 		E20C94AD23D4953A00D2EDE6 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20C94AC23D4953A00D2EDE6 /* LocalizationSystem.swift */; };
 		E20C94B723D4C6C600D2EDE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20C94B623D4C6C500D2EDE6 /* Main.storyboard */; };
@@ -19,9 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		700E15A032D874EDB08F4F68 /* Pods_localizationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_localizationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A399072EFF396949FF9206D2 /* Pods-localizationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localizationProject.release.xcconfig"; path = "Target Support Files/Pods-localizationProject/Pods-localizationProject.release.xcconfig"; sourceTree = "<group>"; };
-		D4A5D740C92EADE027349D89 /* Pods-localizationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-localizationProject.debug.xcconfig"; path = "Target Support Files/Pods-localizationProject/Pods-localizationProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E20C94A923D3C80C00D2EDE6 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E20C94AB23D3C81200D2EDE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E20C94AC23D4953A00D2EDE6 /* LocalizationSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
@@ -40,37 +36,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA680E977A876631F9582465 /* Pods_localizationProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5E58319D8835A1B0141CCAEC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				700E15A032D874EDB08F4F68 /* Pods_localizationProject.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6B1822FBD28EB458D75B98DE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D4A5D740C92EADE027349D89 /* Pods-localizationProject.debug.xcconfig */,
-				A399072EFF396949FF9206D2 /* Pods-localizationProject.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		E296C29523D1DCCB00BD3DFF = {
 			isa = PBXGroup;
 			children = (
 				E296C2A023D1DCCB00BD3DFF /* localizationProject */,
 				E296C29F23D1DCCB00BD3DFF /* Products */,
-				6B1822FBD28EB458D75B98DE /* Pods */,
-				5E58319D8835A1B0141CCAEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,12 +81,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E296C2B223D1DCCD00BD3DFF /* Build configuration list for PBXNativeTarget "localizationProject" */;
 			buildPhases = (
-				006CFEFED7EFE25221CC6FE7 /* [CP] Check Pods Manifest.lock */,
-				E20C94A123D3C1D400D2EDE6 /* R Swift Script */,
 				E296C29A23D1DCCB00BD3DFF /* Sources */,
 				E296C29B23D1DCCB00BD3DFF /* Frameworks */,
 				E296C29C23D1DCCB00BD3DFF /* Resources */,
-				675B59D98746C9C075C3D079 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,68 +141,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		006CFEFED7EFE25221CC6FE7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-localizationProject-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		675B59D98746C9C075C3D079 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-localizationProject/Pods-localizationProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-localizationProject/Pods-localizationProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-localizationProject/Pods-localizationProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E20C94A123D3C1D400D2EDE6 /* R Swift Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$TEMP_DIR/rswift-lastrun",
-			);
-			name = "R Swift Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E296C29A23D1DCCB00BD3DFF /* Sources */ = {
@@ -384,7 +295,6 @@
 		};
 		E296C2B323D1DCCD00BD3DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4A5D740C92EADE027349D89 /* Pods-localizationProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -402,7 +312,6 @@
 		};
 		E296C2B423D1DCCD00BD3DFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A399072EFF396949FF9206D2 /* Pods-localizationProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

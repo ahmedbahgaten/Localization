@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var aboutLabel:UILabel!
     @IBOutlet weak var termsLabel:UILabel!
     @IBOutlet weak var segmentedControl:UISegmentedControl!
+    @IBOutlet weak var notificationSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         termsLabel.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "Terms_Policies", comment: "")
     }
     override func viewWillAppear(_ animated: Bool) {
+        
         if "en" == LocalizationSystem.sharedInstance.getLanguage() {
             segmentedControl.selectedSegmentIndex = 0
         }
@@ -52,11 +54,18 @@ class ViewController: UIViewController {
     func setupArabicLanguage() {
         LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
+      
         restartApplication()
     }
     func setupEnglishLanguage() {
         LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
         UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        if notificationSwitch.isOn {
+            notificationSwitch.isOn = true
+        }
+        else {
+            notificationSwitch.isOn = false
+        }
         restartApplication()
     }
     func restartApplication() {
