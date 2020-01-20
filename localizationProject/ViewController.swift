@@ -75,18 +75,9 @@ class ViewController: UIViewController {
     @IBAction func languageChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            if "en" == LocalizationSystem.sharedInstance.getLanguage() {
-                setupArabicLanguage()
-            } else {
                 setupEnglishLanguage()
-            }
         case 1:
-            if "ar" ==
-                LocalizationSystem.sharedInstance.getLanguage() {
-                setupEnglishLanguage()
-            } else {
                 setupArabicLanguage()
-            }
         default:
             print("Default")
         }
